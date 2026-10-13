@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gestión de Recursos y Emprendimiento · Bootcamp de Innovación – UAM Xochimilco</title>
-<meta name="description" content="Oficina de Gestión de Recursos y Emprendimiento (OGRE), UAM Xochimilco. Bootcamp de Innovación Científica y Tecnológica: todos los viernes del 3 al 31 de julio de 2026, de 10:00 a 15:00 h.">
+<title>Gestión de Recursos y Emprendimiento – Universidad Autónoma Metropolitana</title>
+<meta name="description" content="Oficina de Gestión de Recursos y Emprendimiento (OGRE), UAM Xochimilco: registro de patentes, captación de recursos, convocatorias y emprendimiento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Overpass:wght@400;700&family=Michroma&display=swap" rel="stylesheet">
@@ -148,55 +148,25 @@ form.f textarea{min-height:150px;resize:vertical}
 .k{font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;display:block}
 
 /* ===== INICIO: slider ===== */
-.slider{position:relative;height:665px;overflow:hidden;color:#fff;background:radial-gradient(60% 80% at 20% 30%,#1b4aa8 0%,transparent 70%),linear-gradient(160deg,#050c1c,#0c1c40 60%,#07112a)}
+.slider{position:relative;overflow:hidden;color:#fff;padding:70px 0 84px;background:radial-gradient(60% 80% at 20% 30%,#1b4aa8 0%,transparent 70%),linear-gradient(160deg,#050c1c,#0c1c40 60%,#07112a)}
 .slider #fx2{position:absolute;inset:0;width:100%;height:100%;display:block}
-.scrim2{position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 62% at 50% 52%,rgba(4,10,26,.62),rgba(4,10,26,.25) 60%,transparent 85%)}
-.slider .track{position:relative;z-index:2}
-.bg2{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.bg2 i{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(120,225,255,.22),rgba(40,150,255,.12) 60%,rgba(40,150,255,.04));border:1px solid rgba(170,235,255,.28);animation:bk var(--d,16s) ease-in-out infinite alternate}
-.bg2 b{position:absolute;border-radius:50%;background:#8fe6ff;box-shadow:0 0 8px #5fd8ff;animation:tw var(--d,4s) ease-in-out infinite alternate}
-.bg2 u{position:absolute;width:5px;height:5px;background:#fff;opacity:.7;animation:tw var(--d,3s) steps(2) infinite}
-@keyframes bk{to{transform:translate(var(--x,30px),var(--y,-40px)) scale(1.08)}}
-@keyframes tw{from{opacity:.15}to{opacity:.95}}
-.track{display:flex;height:100%;transition:transform .7s cubic-bezier(.65,.05,.25,1)}
-.slide{flex:0 0 100%;height:100%;position:relative;display:grid;place-items:center;padding:0 90px}
-.slide .in{max-width:1080px;width:100%}
-.slide h2{font-size:clamp(1.7rem,3.8vw,3.3rem);line-height:1.1;font-weight:800;color:#fff;letter-spacing:-.02em;text-shadow:0 0 24px rgba(80,160,255,.45)}
-.slide h2 span{color:#7fe3ff}
-.slide .k{color:#7fe3ff}
-.slide p.lead{margin-top:18px;font-size:clamp(1.05rem,1.8vw,1.45rem);color:#cfe3ff;max-width:780px}
-.slide .btn{background:linear-gradient(90deg,#2ad0ff,#3b7bff);border-color:transparent;color:#04122e;border-radius:99px;box-shadow:0 0 28px rgba(60,170,255,.45)}
-.slide .btn:hover{transform:translateY(-3px)}
-.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.pills span{border:2px solid rgba(160,220,255,.6);color:#e6f4ff;background:rgba(10,30,70,.45);padding:8px 18px;border-radius:99px;font-weight:600;font-size:.92rem}
-.pills span.f{background:#7fe3ff;border-color:#7fe3ff;color:#04122e}
-.mods{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:30px}
-.mod{background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(160,220,255,.25);border-top:4px solid #3dbfe8;padding:18px 16px;color:#fff}
-.mod b{display:block;font-size:.78rem;color:var(--blue);letter-spacing:.15em}
-.mod h3{font-size:1.05rem;line-height:1.2;color:#fff;margin:6px 0}
-.mod p{font-size:.85rem;line-height:1.4;color:#cfe3ff}.mod i{display:block;margin-top:10px;font-size:.75rem;font-style:normal;font-weight:700;color:#7fe3ff}
-.days{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-.days div{width:96px;text-align:center;background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(160,220,255,.4);border-radius:10px;padding:10px 0}
-.days small{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;color:#7fe3ff}.days b{font-size:2.2rem;line-height:1.1;color:#fff}
-.hours{margin-top:26px;font-size:clamp(1.4rem,2.6vw,2.2rem);font-weight:700;color:#fff}
-.qrs{display:flex;flex-wrap:wrap;gap:34px;margin-top:28px}
-.qrs a{display:flex;gap:18px;align-items:center;font-weight:700;color:#fff;max-width:330px}
-.qrs img{width:112px;height:112px;background:#fff;padding:6px;border-radius:10px;box-shadow:0 0 24px rgba(80,170,255,.4)}
-.qrs span small{display:block;font-weight:500;color:#cfe3ff;font-size:.85rem}
-.arr{position:absolute;top:50%;width:60px;height:60px;margin-top:-30px;border:0;background:none;cursor:pointer;z-index:3;opacity:.55;transition:.2s}
+.scrim2{position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 62% at 50% 52%,rgba(4,10,26,.55),rgba(4,10,26,.2) 60%,transparent 85%)}
+.slider .track{position:relative;z-index:2;display:flex;transition:transform .7s cubic-bezier(.65,.05,.25,1)}
+.slide{flex:0 0 100%;display:grid;place-items:center;padding:0 clamp(48px,7vw,110px)}
+.slide img{width:100%;max-width:1170px;height:auto;display:block;border-radius:14px;box-shadow:0 0 0 1px rgba(160,220,255,.35),0 24px 60px rgba(0,0,0,.45),0 0 50px rgba(60,170,255,.25)}
+.arr{position:absolute;top:50%;width:56px;height:56px;margin-top:-28px;border:0;background:none;cursor:pointer;z-index:4;opacity:.65;transition:.2s}
 .arr:hover{opacity:1}.arr svg{width:100%;height:100%;stroke:#bfe9ff;stroke-width:5;fill:none;stroke-linecap:square}
-.arr.p{left:14px}.arr.n{right:14px}
-.dots{position:absolute;bottom:22px;left:0;right:0;display:flex;justify-content:center;gap:20px;z-index:3}
-.dots button{width:18px;height:18px;border-radius:50%;border:3px solid #bfe9ff;background:transparent;cursor:pointer;padding:0}
+.arr.p{left:10px}.arr.n{right:10px}
+.dots{position:absolute;bottom:28px;left:0;right:0;display:flex;justify-content:center;gap:16px;z-index:4}
+.dots button{width:16px;height:16px;border-radius:50%;border:3px solid #bfe9ff;background:transparent;cursor:pointer;padding:0}
 .dots button.on{background:#7fe3ff;border-color:#7fe3ff}
-@media(max-width:980px){.slider{height:auto;min-height:700px}.slide{padding:60px 56px 90px;align-items:start}.mods{grid-template-columns:1fr 1fr}.arr{width:40px;height:40px}}
-@media(max-width:560px){.mods{grid-template-columns:1fr}.slide{padding:50px 46px 90px}.slider{min-height:880px}}
+@media(max-width:700px){.slider{padding:44px 0 70px}.arr{width:38px;height:38px;margin-top:-19px}}
+.logo-col{display:grid;place-items:center}.logo-col img{width:min(420px,100%);filter:drop-shadow(0 12px 30px rgba(20,41,90,.25))}
 
 .about{position:relative;background:url(https://recursosyemprendimiento.xoc.uam.mx/archivos/1.jpg) center/cover;padding:70px 0}
 .about::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.6)}
 .about .wrap{position:relative}
 .about p{color:#000}
-.poster-frame{width:100%;aspect-ratio:1080/1350;border:0;box-shadow:0 14px 50px rgba(20,41,90,.25);background:#fff;display:block}
 
 footer{background:var(--navy);color:#cfd8ee;padding:40px 20px;font-size:.88rem}
 footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
@@ -225,7 +195,6 @@ footer .soc a{display:flex}
     <a class="l" href="#/" aria-label="Inicio"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/Logo-uam-completo-color.png" alt="Universidad Autónoma Metropolitana · Unidad Xochimilco"></a>
     <nav id="nav" aria-label="Principal"><ul>
       <li><a class="t" href="#/" data-r="/">Inicio</a></li>
-      <li><a class="t" href="#/bootcamp" data-r="/bootcamp">Bootcamp</a></li>
       <li><a class="t" href="#/nosotros" data-r="/nosotros">Nosotros</a></li>
       <li class="has"><a class="t" href="#/servicios" data-r="/servicios">Servicios</a>
         <ul class="sub">
@@ -257,39 +226,16 @@ footer .soc a{display:flex}
   <section class="slider" aria-roledescription="carrusel">
     <canvas id="fx2" aria-hidden="true"></canvas><div class="scrim2"></div>
     <div class="track" id="track">
-      <article class="slide"><div class="in">
-        <span class="k">La Coordinación de Vinculación y Fortalecimiento Académico invita</span>
-        <h2>Bootcamp de <span>Innovación Científica</span> y Tecnológica</h2>
-        <p class="lead">A través de la Maestría en Economía y Gestión de la Innovación. Convierte tu investigación en un proyecto viable.</p>
-        <div class="pills"><span class="f">Dirigido al personal docente</span><span>Viernes 3–31 de julio 2026</span><span>10:00 a 15:00 horas</span></div>
-        <div class="btns"><a class="btn" href="#/bootcamp">Asegura tu lugar · cupo limitado</a></div>
-      </div></article>
-      <article class="slide"><div class="in">
-        <span class="k">Módulos</span>
-        <h2>Del problema al <span>pitch</span> en cinco sesiones</h2>
-        <div class="mods">
-          <div class="mod"><b>01</b><h3>Design Thinking</h3><p>Del problema a la solución viable.</p><i>Vie 3 jul</i></div>
-          <div class="mod"><b>02</b><h3>Modelo de Negocios</h3><p>De la idea a la estrategia de valor.</p><i>Vie 10 jul</i></div>
-          <div class="mod"><b>03</b><h3>Propiedad Intelectual</h3><p>Figuras de protección y patentes.</p><i>Vie 17 jul</i></div>
-          <div class="mod"><b>04</b><h3>Transferencia Tecnológica</h3><p>Estrategias para llevar tu proyecto al mercado.</p><i>Vie 24 jul</i></div>
-          <div class="mod"><b>05</b><h3>Pitch Final</h3><p>Presentación ante jurados expertos.</p><i>Vie 31 jul</i></div>
-        </div>
-      </div></article>
-      <article class="slide"><div class="in">
-        <span class="k">Calendario</span>
-        <h2>Todos los viernes del <span>3 al 31 de julio</span> 2026</h2>
-        <div class="days"><div><small>VIE</small><b>3</b><small>JUL</small></div><div><small>VIE</small><b>10</b><small>JUL</small></div><div><small>VIE</small><b>17</b><small>JUL</small></div><div><small>VIE</small><b>24</b><small>JUL</small></div><div><small>VIE</small><b>31</b><small>JUL</small></div></div>
-        <p class="hours">De 10:00 a 15:00 horas</p>
-        <p class="lead">El conocimiento que transforma la sociedad va más allá de la teoría. Lleva tu proyecto al siguiente nivel en este Bootcamp intensivo.</p>
-      </div></article>
-      <article class="slide"><div class="in">
-        <span class="k">Cupo limitado</span>
-        <h2>Asegura tu lugar y <span>descarga el programa</span></h2>
-        <div class="qrs">
-          <a href="qr-cupo.png" target="_blank" rel="noopener"><img src="qr-cupo.png" alt="QR para registrarse"><span>Asegura tu lugar<small>Cupo limitado</small></span></a>
-          <a href="qr-programa.png" target="_blank" rel="noopener"><img src="qr-programa.png" alt="QR del programa"><span>Descarga el programa completo aquí<small>Temario de cada sesión</small></span></a>
-        </div>
-      </div></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/actualizacion-emprende.png" alt="Actualización Emprende" loading="eager"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/brizy/imgs/Anuncio-OGRE-web-servicio-social-2340x922x0x0x2340x922x1699656781.png" alt="Anuncio OGRE · Servicio social" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/brizy/imgs/Anuncio-OGRE-web-1-2340x922x0x0x2340x922x1699656781.png" alt="Anuncio OGRE" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/Anuncio-OGRE-web-minerva.png" alt="Anuncio OGRE · Minerva" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/brizy/imgs/idea-negocio-horizontal-2340x922x0x0x2340x922x1700079116.png" alt="¿Tienes una idea de negocio?" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/brizy/imgs/Asesoria-para-emprendimiento-horizontal-2340x922x0x0x2340x922x1700080618.png" alt="Asesoría para emprendimiento" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/asesoria-patentes-horizontal.png" alt="Asesoría para patentes" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/Revisa-nuestras-convocatorias-horizontal.png" alt="Revisa nuestras convocatorias" loading="lazy"></article>
+      <article class="slide"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/Gestion-de-Recursos-y-Emprendimiento-horizontal.png" alt="Gestión de Recursos y Emprendimiento" loading="lazy"></article>
+      
     </div>
     <button class="arr p" aria-label="Anterior"><svg viewBox="0 0 60 60"><path d="M40 8 L16 30 L40 52"/></svg></button>
     <button class="arr n" aria-label="Siguiente"><svg viewBox="0 0 60 60"><path d="M20 8 L44 30 L20 52"/></svg></button>
@@ -297,39 +243,12 @@ footer .soc a{display:flex}
   </section>
 
   <section class="about"><div class="wrap two" style="align-items:center">
+    <div class="logo-col"><img src="https://recursosyemprendimiento.xoc.uam.mx/archivos/Ogre-circular-transp-negras-1.png" alt="OGRE · Gestión de Recursos y Emprendimiento"></div>
     <div>
-      <h2 class="t2">Oficina de Gestión de Recursos y <span>Emprendimiento</span></h2>
       <p class="p just">En la Oficina de Gestión de Recursos y emprendimiento, apoyamos al profesorado en el registro de proyectos para la captación de ingresos propios extraordinarios y la publicación de convocatorias en las que puedan solicitar recursos que les apoyen en el desarrollo de sus investigaciones.</p>
       <p class="p just">Damos asesorías para ayudar al alumnado en el registro de sus inventos ante el Instituto Mexicano de la Propiedad Intelectual, también impartimos pláticas y publicamos convocatorias, cursos, talleres, diplomados, y más, como apoyo a la capacitación del camino emprendedor.</p>
       <p class="p"><b>No olvides seguirnos en redes sociales</b></p>
       <div class="soc" data-soc></div>
-      <div class="btns"><a class="btn" href="#/servicios">Conoce nuestros servicios</a><a class="btn o" href="#/recursos/convocatorias">Ver convocatorias</a></div>
-    </div>
-    <iframe class="poster-frame" src="poster.html?embed" title="Póster del Bootcamp de Innovación Científica y Tecnológica" loading="lazy"></iframe>
-  </div></section>
-</div>
-
-<!-- ========== BOOTCAMP ========== -->
-<div class="view" data-v="/bootcamp">
-  <div class="banner"><div class="wrap"><div class="crumb"><a href="#/">Inicio</a> / Bootcamp</div>
-    <h1>Bootcamp de Innovación Científica y Tecnológica</h1>
-    <p>La Coordinación de Vinculación y Fortalecimiento Académico a través de la Maestría en Economía y Gestión de la Innovación invita. Convierte tu investigación en un proyecto viable.</p></div></div>
-  <section class="blk"><div class="wrap two">
-    <iframe class="poster-frame" src="poster.html?embed" title="Póster del Bootcamp"></iframe>
-    <div>
-      <span class="k">Dirigido al personal docente</span>
-      <h2 class="t2">Todos los viernes del <span>3 al 31 de julio</span> 2026 · de 10:00 a 15:00 horas</h2>
-      <p class="p">El conocimiento que transforma la sociedad va más allá de la teoría. Lleva tu proyecto al siguiente nivel en este Bootcamp intensivo.</p>
-      <div class="steps">
-        <div class="step"><h4>Design Thinking</h4><p>Del problema a la solución viable. <b>Vie 3 jul</b></p></div>
-        <div class="step"><h4>Modelo de Negocios</h4><p>De la idea a la estrategia de valor. <b>Vie 10 jul</b></p></div>
-        <div class="step"><h4>Propiedad Intelectual</h4><p>Figuras de protección y patentes. <b>Vie 17 jul</b></p></div>
-        <div class="step"><h4>Transferencia Tecnológica</h4><p>Estrategias para llevar tu proyecto al mercado. <b>Vie 24 jul</b></p></div>
-        <div class="step"><h4>Pitch Final</h4><p>Presentación ante jurados expertos. <b>Vie 31 jul</b></p></div>
-      </div>
-      <h2 class="t2" style="margin-top:34px">Cupo limitado</h2>
-      <div class="qrs"><a href="qr-cupo.png" target="_blank" rel="noopener"><img src="qr-cupo.png" alt="QR registro"><span>Asegura tu lugar<small>Cupo limitado</small></span></a>
-      <a href="qr-programa.png" target="_blank" rel="noopener"><img src="qr-programa.png" alt="QR programa"><span>Descarga el programa completo aquí</span></a></div>
     </div>
   </div></section>
 </div>
@@ -522,7 +441,7 @@ footer .soc a{display:flex}
 
 <footer><div class="wrap">
   <div><b>Gestión de Recursos y Emprendimiento · OGRE</b>Universidad Autónoma Metropolitana · Unidad Xochimilco<br>Casa abierta al tiempo<br>Coordinación de Vinculación y Fortalecimiento Académico<div class="soc" data-soc style="margin-top:14px"></div></div>
-  <div><b>Navegación</b><a href="#/">Inicio</a><a href="#/bootcamp">Bootcamp</a><a href="#/nosotros">Nosotros</a><a href="#/servicios">Servicios</a><a href="#/recursos">Recursos</a><a href="#/alianzas">Alianzas</a><a href="#/contacto">Contacto</a></div>
+  <div><b>Navegación</b><a href="#/">Inicio</a><a href="#/nosotros">Nosotros</a><a href="#/servicios">Servicios</a><a href="#/recursos">Recursos</a><a href="#/alianzas">Alianzas</a><a href="#/contacto">Contacto</a></div>
   <div><b>Enlaces</b><a href="https://www.xoc.uam.mx/" target="_blank" rel="noopener">UAM Xochimilco ↗</a><a href="https://vinculacionyfa.xoc.uam.mx/" target="_blank" rel="noopener">Vinculación y Fortalecimiento Académico ↗</a><a href="https://concursoemprende.xoc.uam.mx/" target="_blank" rel="noopener">Concurso Emprende ↗</a><a href="https://linktr.ee/ogre_uamx" target="_blank" rel="noopener">Linktree OGRE ↗</a></div>
 </div></footer>
 <button class="up" id="up" aria-label="Subir"><svg viewBox="0 0 34 34"><path d="M4 23 L17 10 L30 23"/></svg></button>
@@ -548,7 +467,7 @@ const SOC=`<a href="https://www.instagram.com/emprendimiento_uamx/" target="_bla
 document.querySelectorAll('[data-soc]').forEach(e=>e.innerHTML=SOC);
 
 /* ---------- enrutador por hash ---------- */
-const TITLES={'/':'Inicio','/bootcamp':'Bootcamp','/nosotros':'Nosotros','/servicios':'Servicios','/servicios/patentes':'Registro de patentes','/servicios/captacion':'Captación de recursos','/servicios/emprendimiento':'Emprendimiento','/recursos':'Recursos','/recursos/convocatorias':'Convocatorias','/recursos/manuales':'Manuales','/recursos/galeria':'Galería','/recursos/formatos':'Formatos','/alianzas':'Alianzas','/alianzas/gisu':'Alianza GISU','/contacto':'Contacto'};
+const TITLES={'/':'Inicio','/nosotros':'Nosotros','/servicios':'Servicios','/servicios/patentes':'Registro de patentes','/servicios/captacion':'Captación de recursos','/servicios/emprendimiento':'Emprendimiento','/recursos':'Recursos','/recursos/convocatorias':'Convocatorias','/recursos/manuales':'Manuales','/recursos/galeria':'Galería','/recursos/formatos':'Formatos','/alianzas':'Alianzas','/alianzas/gisu':'Alianza GISU','/contacto':'Contacto'};
 const hd=document.querySelector('header.site'),nav=document.getElementById('nav'),bg=document.querySelector('.burger');
 function onScroll(){const home=document.body.classList.contains('home');hd.classList.toggle('stuck',!home||scrollY>innerHeight*.9);document.getElementById('up').classList.toggle('show',scrollY>600)}
 function route(){
