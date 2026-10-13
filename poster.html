@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bootcamp de Innovación Científica y Tecnológica · UAM Xochimilco</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Montserrat:wght@700;800&family=Outfit:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#e7ebf2}
+body{display:flex;justify-content:center;padding:clamp(0px,2vw,28px) 0}
+/* El póster se escala proporcionalmente: 1 unidad = 1px del diseño original (1080 × 1350) */
+.poster{--u:calc(100cqw/1080);position:relative;container-type:inline-size;width:min(1080px,100%);aspect-ratio:1080/1350;background:#fff;overflow:hidden;box-shadow:0 10px 50px rgba(20,30,70,.18);color:#111}
+.poster>*{position:absolute}
+.t{left:calc(var(--x)*var(--u));top:calc(var(--y)*var(--u));font-size:calc(var(--fs)*var(--u));white-space:nowrap;line-height:1}
+.c{transform:translate(-50%,-50%);text-align:center}
+.img{left:calc(var(--x)*var(--u));top:calc(var(--y)*var(--u));width:calc(var(--w)*var(--u));display:block}
+
+.intro{font-family:'Montserrat',sans-serif;font-weight:700;color:#111}
+.title{font-family:'Pixelify Sans',monospace;font-weight:700;color:#232a5c;letter-spacing:.01em;
+  text-shadow:calc(var(--u)*-3) calc(var(--u)*-2) 0 #ff2bd6,calc(var(--u)*3) calc(var(--u)*2) 0 #35d8ff}
+.subtitle{font-family:'Pixelify Sans',monospace;font-weight:500;color:#3aa6c9}
+.cond{font-family:'Oswald',sans-serif;font-weight:600;color:#111;letter-spacing:-.01em}
+.mods{left:calc(505*var(--u));width:calc(462*var(--u));font-family:'Outfit',sans-serif;font-weight:300;font-size:calc(23.2*var(--u));letter-spacing:-.022em;line-height:calc(35.5*var(--u));text-align:justify;text-align-last:left;color:#14161c}
+.mods.j{text-align-last:justify}
+.quote{font-family:'Outfit',sans-serif;font-style:italic;font-weight:300;color:#14161c;line-height:calc(33*var(--u));font-size:calc(23*var(--u));text-align:center;left:calc(460*var(--u));width:calc(520*var(--u));top:calc(962*var(--u));white-space:nowrap;font-size:calc(22*var(--u))}
+.date{font-family:'Outfit',sans-serif;font-weight:400;color:#111}
+.cta{font-family:'Pixelify Sans',monospace;color:#2a2a4a;font-weight:500;line-height:calc(29*var(--u));text-align:center}
+a.qr{display:block}
+a.qr:hover img{outline:calc(var(--u)*3) solid #35d8ff}
+.glow{left:0;top:calc(398*var(--u));width:100%;height:calc(14*var(--u));pointer-events:none}
+</style>
+<script>if(location.search.includes('embed'))document.write('<style>html,body{background:transparent}body{padding:0}.poster{box-shadow:none}</style>')</script>
+</head>
+<body>
+<main class="poster">
+
+  <!-- cabecera original: logos UAM, DMEGI, Coordinación de Vinculación -->
+  <img class="img" src="header.png" alt="UAM Xochimilco · DMEGI · Coordinación de Vinculación y Fortalecimiento Académico" style="--x:0;--y:0;--w:1080">
+
+  <p class="t c intro" style="--x:537;--y:170;--fs:24.5">La Coordinación de Vinculación y Fortalecimiento Académico a través de la</p>
+  <p class="t c intro" style="--x:540;--y:207;--fs:24.5">Maestría en Economía y Gestión de la Innovación invita:</p>
+
+  <h1 class="t c title" style="--x:559;--y:264;--fs:54">BOOTCAMP DE INNOVACIÓN CIENTÍFICA</h1>
+  <h1 class="t c title" style="--x:560;--y:341;--fs:54">Y TECNOLÓGICA</h1>
+
+  <img class="img" src="swoosh.png" alt="" style="--x:960;--y:292;--w:120">
+
+  <svg class="img" style="--x:330;--y:330;--w:740;height:calc(190*var(--u))" viewBox="0 0 740 190" fill="none"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#bfeaf7" stop-opacity="0"/><stop offset=".8" stop-color="#8fd8f0" stop-opacity=".9"/><stop offset="1" stop-color="#6fc7ee"/></linearGradient></defs><path d="M20 120C250 150 520 150 740 70" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/><path d="M30 105C260 135 520 135 740 62" stroke="url(#g)" stroke-width="2" opacity=".6"/></svg>
+  <p class="t c subtitle" style="--x:567;--y:402;--fs:34">Convierte tu investigación en un proyecto viable</p>
+
+  <img class="img" src="head.png" alt="Cabeza digital formada por puntos de luz" style="--x:0;--y:435;--w:385">
+
+  <p class="t cond" style="--x:307;--y:505;--fs:25">Dirigido al personal docente</p>
+  <p class="t cond" style="--x:417;--y:545;--fs:39;font-weight:500">Módulos:</p>
+
+  <img class="img" src="star.png" alt="" style="--x:461;--y:605;--w:44">
+  <p class="mods" style="top:calc(607*var(--u))">Design Thinking – Del problema a la solución viable</p>
+  <img class="img" src="star.png" alt="" style="--x:461;--y:676;--w:44">
+  <p class="mods" style="top:calc(677*var(--u))">Modelo de Negocios – De la idea a la estrategia de valor</p>
+  <img class="img" src="star.png" alt="" style="--x:461;--y:748;--w:44">
+  <p class="mods" style="top:calc(748*var(--u))">Propiedad Intelectual – Figuras de protección y patentes</p>
+  <img class="img" src="star.png" alt="" style="--x:461;--y:819;--w:44">
+  <p class="mods" style="top:calc(819*var(--u))">Transferencia Tecnológica – Estrategias para llevar tu proyecto al mercado</p>
+  <img class="img" src="star.png" alt="" style="--x:461;--y:891;--w:44">
+  <p class="mods" style="top:calc(891*var(--u));white-space:nowrap;text-align-last:justify;font-size:calc(21.6*var(--u))">Pitch Final – Presentación ante jurados expertos</p>
+
+  <img class="img" src="spark.png" alt="" style="--x:955;--y:935;--w:62">
+  <p class="quote">El conocimiento que transforma la sociedad va más allá de la<br>teoría. Lleva tu proyecto al siguiente nivel en este<br>Bootcamp intensivo</p>
+
+  <p class="t c date" style="--x:725;--y:1085;--fs:26.5">Todos los viernes del 3 al 31 de julio 2026</p>
+  <p class="t c date" style="--x:725;--y:1118;--fs:26.5">De 10:00 a 15:00 horas</p>
+
+  <img class="img" src="chev1.png" alt="" style="--x:355;--y:1168;--w:66">
+  <p class="t c cta" style="--x:540;--y:1203;--fs:21;white-space:normal;width:calc(230*var(--u))">Asegura tu lugar cupo limitado</p>
+  <a class="qr img" href="qr-cupo.png" target="_blank" rel="noopener" style="--x:494;--y:1241;--w:92" aria-label="Asegura tu lugar"><img src="qr-cupo.png" alt="Código QR: asegura tu lugar" style="width:100%"></a>
+
+  <img class="img" src="chev2.png" alt="" style="--x:686;--y:1168;--w:66">
+  <p class="t c cta" style="--x:871;--y:1203;--fs:21;white-space:normal;width:calc(240*var(--u))">Descarga el programa completo aquí</p>
+  <a class="qr img" href="qr-programa.png" target="_blank" rel="noopener" style="--x:824;--y:1238;--w:98" aria-label="Descarga el programa"><img src="qr-programa.png" alt="Código QR: programa completo" style="width:100%"></a>
+
+</main>
+</body>
+</html>
