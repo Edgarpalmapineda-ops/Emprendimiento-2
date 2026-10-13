@@ -30,7 +30,7 @@ body.inner .hero{display:none}
 .hero .badge img{position:absolute;width:150.3%;max-width:none;left:-18.7%;top:-16.5%;display:block}
 .hero .txt{position:relative;width:min(1300px,100%);margin:0 auto;padding:60px clamp(20px,5vw,60px) 0;z-index:2;text-align:center}
 .hero .chip{display:inline-block;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(160,220,255,.6);color:#bfe9ff;padding:8px 16px;border-radius:99px;margin-bottom:26px;background:rgba(10,30,70,.5)}
-.hero h1{font-family:Michroma,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(1.5rem,5.2vw,5.2rem);line-height:1.25;letter-spacing:.01em;color:#fff;text-shadow:0 0 22px rgba(120,190,255,.7),0 0 3px rgba(0,0,0,.6)}
+.hero h1{font-family:Michroma,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(1rem,5.2vw,5.2rem);overflow-wrap:anywhere;line-height:1.25;letter-spacing:.01em;color:#fff;text-shadow:0 0 22px rgba(120,190,255,.7),0 0 3px rgba(0,0,0,.6)}
 .hero p.s{margin-top:24px;font-size:clamp(1rem,1.6vw,1.45rem);color:#7fe3ff;font-weight:500;display:flex;align-items:center;gap:14px}
 .hero p.s::before{content:"\00bb\00bb";letter-spacing:-4px;font-size:2.2rem;line-height:.6;color:#5fd0ff}
 .hero .meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px 28px;color:#dbe8ff}.hero .meta b{color:#fff}
@@ -39,7 +39,7 @@ body.inner .hero{display:none}
 .hero .go{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:26px;height:44px;border:2px solid #fff;border-radius:16px;opacity:.7;z-index:2}
 .hero .go::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:wheel 1.6s infinite}
 @keyframes wheel{to{transform:translateY(14px);opacity:0}}
-@media(max-width:900px){.hero .txt{padding:130px 22px 40px}.hero .go{display:none}}
+@media(max-width:900px){.hero .txt{padding:130px 18px 40px}.hero h1{font-size:clamp(1rem,6.1vw,3rem)}}
 
 /* ===== ENCABEZADO ===== */
 header.site{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.06)}
@@ -123,6 +123,14 @@ a.card:hover,.card.h:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgb
 .table th{background:var(--navy);color:#fff;text-align:left;padding:14px 20px;font-size:.82rem;letter-spacing:.14em}
 .table td{padding:14px 20px;border-top:1px solid var(--line)}.table td:last-child{text-align:right;width:160px}
 .table tr:hover td{background:#f3f9ff}
+.tblwrap{overflow-x:auto}
+@media(max-width:640px){
+  .table,.table tbody,.table tr,.table td{display:block;width:100%}
+  .table thead{display:none}
+  .table tr{padding:16px 18px;border-top:1px solid var(--line)}
+  .table td{border:0;padding:0;text-align:left!important;width:auto!important}
+  .table td+td{margin-top:12px}
+}
 .dl{display:inline-block;padding:8px 18px;border:2px solid var(--navy);color:var(--navy);font-weight:700;font-size:.82rem;border-radius:99px;transition:.2s;background:#fff}
 .dl:hover{background:var(--navy);color:#fff}
 .soon{display:inline-block;padding:8px 18px;background:#eef2f8;color:#6b7a90;font-weight:700;font-size:.8rem;border-radius:99px;letter-spacing:.05em}
@@ -134,7 +142,7 @@ a.card:hover,.card.h:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgb
 .soc a{display:flex;align-items:center;gap:12px;padding:12px 22px;border-radius:99px;background:var(--navy);color:#fff;font-weight:600;transition:.2s;font-size:.92rem}
 .soc a:hover{background:var(--blue);transform:translateY(-3px)}.soc svg{width:20px;height:20px;fill:#fff}
 footer .soc a{background:rgba(255,255,255,.12);padding:9px 16px}
-form.f{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+form.f{display:grid;gap:14px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 form.f .full{grid-column:1/-1}
 form.f input,form.f textarea{width:100%;padding:14px 16px;border:1px solid #c8d3e6;border-radius:6px;font:inherit;background:#fff;transition:.2s}
 form.f input:focus,form.f textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(61,191,232,.2)}
@@ -142,9 +150,11 @@ form.f textarea{min-height:150px;resize:vertical}
 .info{display:grid;gap:22px}
 .info>div{display:flex;gap:16px;align-items:flex-start}
 .info .ico{margin:0;width:46px;height:46px}
-@media(max-width:800px){form.f{grid-template-columns:1fr}}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
-@media(max-width:900px){.two{grid-template-columns:1fr}}
+.info p{min-width:0;overflow-wrap:anywhere}
+@media(max-width:800px){form.f{grid-template-columns:minmax(0,1fr)}}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:50px;align-items:start}
+.two>*,form.f>*{min-width:0}
+@media(max-width:900px){.two{grid-template-columns:minmax(0,1fr);gap:36px}}
 .k{font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;display:block}
 
 /* ===== INICIO: slider ===== */
@@ -160,7 +170,7 @@ form.f textarea{min-height:150px;resize:vertical}
 .dots{position:absolute;bottom:28px;left:0;right:0;display:flex;justify-content:center;gap:16px;z-index:4}
 .dots button{width:16px;height:16px;border-radius:50%;border:3px solid #bfe9ff;background:transparent;cursor:pointer;padding:0}
 .dots button.on{background:#7fe3ff;border-color:#7fe3ff}
-@media(max-width:700px){.slider{padding:44px 0 70px}.arr{width:38px;height:38px;margin-top:-19px}}
+@media(max-width:700px){.dots{gap:9px;bottom:24px}.dots button{width:12px;height:12px;border-width:2px}.slider{padding:44px 0 70px}.arr{width:38px;height:38px;margin-top:-19px}}
 .logo-col{display:grid;place-items:center}.logo-col img{width:min(420px,100%);filter:drop-shadow(0 12px 30px rgba(20,41,90,.25))}
 
 .about{position:relative;background:url(https://recursosyemprendimiento.xoc.uam.mx/archivos/1.jpg) center/cover;padding:70px 0}
@@ -173,6 +183,7 @@ footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
 footer b{color:#fff;display:block;margin-bottom:8px}footer a{display:block;padding:2px 0;color:#bcd4ff}footer a:hover{color:#fff}
 footer .soc a{display:flex}
 @media(max-width:800px){footer .wrap{grid-template-columns:1fr}}
+.menu-open .up{display:none}
 .up{position:fixed;right:18px;bottom:18px;width:60px;height:60px;background:rgba(61,100,232,.35);border:0;cursor:pointer;z-index:60;opacity:0;pointer-events:none;transition:.3s;display:grid;place-items:center}
 .up.show{opacity:1;pointer-events:auto}.up:hover{background:rgba(61,100,232,.7)}
 .up svg{width:34px;height:34px;stroke:#fff;stroke-width:3;fill:none}
@@ -476,12 +487,12 @@ function route(){
   const home=p==='/';document.body.classList.toggle('home',home);document.body.classList.toggle('inner',!home);
   document.querySelectorAll('nav a.t').forEach(a=>{const r=a.dataset.r;a.classList.toggle('on',r===p||(r!=='/'&&p.startsWith(r+'/')))});
   document.title=(home?'':TITLES[p]+' · ')+'Gestión de Recursos y Emprendimiento · UAM Xochimilco';
-  nav.classList.remove('open');bg.classList.remove('open');bg.setAttribute('aria-expanded',false);
+  nav.classList.remove('open');document.body.classList.remove('menu-open');bg.classList.remove('open');bg.setAttribute('aria-expanded',false);
   document.documentElement.style.scrollBehavior='auto';scrollTo(0,0);document.documentElement.style.scrollBehavior='';onScroll();
 }
 addEventListener('hashchange',route);addEventListener('scroll',onScroll,{passive:true});
 document.getElementById('up').onclick=()=>scrollTo({top:0,behavior:'smooth'});
-bg.onclick=()=>{const o=nav.classList.toggle('open');bg.classList.toggle('open',o);bg.setAttribute('aria-expanded',o)};
+bg.onclick=()=>{const o=nav.classList.toggle('open');document.body.classList.toggle('menu-open',o);bg.classList.toggle('open',o);bg.setAttribute('aria-expanded',o)};
 document.getElementById('cform').addEventListener('submit',e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));
   location.href='mailto:ogre@correo.xoc.uam.mx?subject='+encodeURIComponent(d.asunto)+'&body='+encodeURIComponent(`${d.mensaje}\n\n— ${d.nombre} ${d.apellido} (${d.correo})`)});
 
